@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* EasyMDE overrides for dark theme */
+.EasyMDEContainer .CodeMirror {
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+.EasyMDEContainer .editor-toolbar {
+    background-color: #020617;
+    border-color: #1e293b;
+}
+
+.EasyMDEContainer .editor-toolbar a {
+    color: #cbd5f5 !important;
+}
+
+.sidebar {
+    width: 280px;
+    
+}
+
+.sidebar-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.sidebar-categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-categories li {
+    margin-bottom: 6px;
+}
+
+.sidebar-categories a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #e7e6e6;
+}
+
+.sidebar-categories a.active {
+    font-weight: 600;
+    color: #b1fe9e;
+}
+
+.sidebar .count {
+    opacity: 0.6;
+    font-size: 0.9em;
+}
